@@ -1,0 +1,65 @@
+.el-input__inner {
+    font-size: 13px;
+    color: #000000;
+}
+
+.el-select {
+    width: 150px;
+}
+
+.el-select .el-input__inner {
+    height: 28px;
+    padding-left: 0px;
+}
+
+.el-select .el-input__suffix {
+    line-height: 28px;
+}
+
+.el-select .el-input__suffix .el-input__icon {
+    line-height: 28px;
+}
+
+.el-input {
+    width: 150px !important;
+    line-height: 28px;
+}
+
+.el-input .el-input__inner {
+    height: 28px;
+}
+
+.el-input__prefix {
+    line-height: 28px;
+}
+
+.el-input__prefix .el-input__icon {
+    line-height: 28px;
+}
+
+.el-date-editor--daterange.el-input__inner {
+    width: 220px;
+}
+
+
+/* 使用教程卡片 */
+
+.el-popover .cl-help-card-title {
+    font-size: 16px;
+    color: #1a8aff;
+    height: 30px;
+    line-height: 30px;
+}
+
+.el-popover .cl-help-card-content {
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+
+/* 分页 */
+
+.el-pagination {
+    margin-top: 6px;
+    text-align: center;
+}

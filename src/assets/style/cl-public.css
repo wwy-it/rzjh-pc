@@ -1,0 +1,445 @@
+/*************** 内部切换header公共块样式 ***************/
+
+.cl-info-nav {
+    height: 30px;
+    background: #fff;
+    font-size: 12px;
+}
+
+.cl-info-nav .nav {
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.cl-info-nav .info {
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+.cl-info-nav .nav li {
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.cl-info-nav .info li {
+    display: inline-block;
+    height: 100%;
+    line-height: 30px;
+    color: #666666;
+}
+
+.cl-info-nav .info li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    color: #666666;
+}
+
+.cl-info-nav .nav li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    color: #666666;
+}
+
+.cl-info-nav .nav li a.activation {
+    color: #409EFF;
+    border-bottom: 2px solid #409EFF;
+}
+
+.cl-info-nav .nav li a.router-link-active {
+    color: #409EFF;
+    border-bottom: 2px solid #409EFF;
+}
+
+.cl-button {
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #4f8ef5;
+    border: 1px solid #b9d2fb;
+    background-color: transparent;
+}
+
+button.cl-button:hover {
+    background-color: #edf3ff;
+}
+
+button.cl-button:focus {
+    outline: none;
+}
+
+.cl-input {
+    width: 170px;
+    height: 25px;
+    padding: 0px 5px;
+    border: 1px solid #dcdfe6;
+    outline: none;
+}
+
+
+/************************ 表单详情保存按钮,头部的功能按钮区域***********************/
+
+.cl-form-button {
+    height: 32px;
+}
+
+.cl-form-button ul {
+    width: 100%;
+    height: 100%;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cl-form-button ul li {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 10px;
+    padding: 2px 0px;
+    box-sizing: border-box;
+}
+
+.cl-form-button ul li.rig {
+    float: right;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.cl-form-button ul li>button,
+.cl-form-button ul li>label {
+    display: inline-block;
+    padding: 0px 8px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #666666;
+    background: #ffffff;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.cl-form-button ul li>a {
+    display: inline-block;
+    padding: 0px 8px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.cl-form-button ul li>a>img {
+    width: 18px;
+    height: 18px;
+    margin: 0px 2px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.cl-form-button ul li>img {
+    width: 18px;
+    height: 18px;
+    margin: 0px 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.cl-form-button ul li button:hover,
+.cl-form-button ul li label:hover {
+    background: #f3f3f3;
+}
+
+.cl-form-button ul li button img,
+.cl-form-button ul li label img {
+    width: 18px;
+    vertical-align: -4px;
+}
+
+
+/*************** 公共表结构样式 ***************/
+
+.cl-table-modular {
+    background: #fff;
+    height: 100%;
+    border: 1px solid #eeeeee;
+}
+
+.cl-table-modular .public-table-style {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ececec;
+    overflow-x: auto
+}
+
+.cl-table-modular .public-table-style>table {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    color: #666666;
+}
+
+.cl-table-modular .public-table-style>table>thead {
+    display: table;
+    width: calc(100% - 8px);
+    table-layout: fixed;
+}
+
+.cl-table-modular .public-table-style>table>tbody {
+    display: block;
+    width: 100%;
+    height: calc(100% - 38px);
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+.cl-table-modular .public-table-style>table tbody table {
+    width: 100%;
+    overflow: hidden;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    box-sizing: border-box;
+}
+
+.cl-table-modular .public-table-style>table tbody table tr:hover {
+    background: #f3f3f3;
+}
+
+.cl-table-modular .public-table-style>table tbody table .warning-row {
+    background: #ffffff;
+}
+
+.cl-table-modular .public-table-style>table tbody table .success-row {
+    background: #f5f7fa;
+}
+
+.cl-table-modular .public-table-style>table th {
+    font-weight: 400;
+    height: 35px;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-size: 13px;
+    border: 1px solid #d0d0d0;
+    background: #f3f3f3;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cl-table-modular .public-table-style>table th img {
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.cl-table-modular .public-table-style>table th .el-select {
+    width: 100%;
+}
+
+.cl-table-modular .public-table-style>table th .head-search {}
+
+.cl-table-modular .public-table-style>table th .head-search input {
+    background: #f3f3f3;
+    border: none;
+    height: 35px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cl-table-modular .public-table-style>table td {
+    color: #555555;
+    height: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666666;
+    font-size: 13px;
+    border: 1px solid #ececec;
+}
+
+.cl-table-modular .public-table-style>table .selectEvent td {
+    background: #fff3f3;
+}
+
+.cl-table-modular .public-table-style>table td .el-select,
+.cl-table-modular .public-table-style>table td .el-input {
+    width: 100%;
+}
+
+.cl-table-modular .public-table-style>table td>span {
+    padding: 0px 4px 0px 4px;
+}
+
+.cl-table-modular .public-table-style>table td>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #2d8cf0;
+    line-height: 35px;
+    text-indent: 4px;
+}
+
+
+/* checkbox */
+
+.cl-table-modular .public-table-style .el-checkbox__input.is-checked .el-checkbox__inner {
+    /* border: 1px solid #e14c46; */
+}
+
+.cl-table-modular .public-table-style .el-checkbox__input.is-checked .el-checkbox__inner::after {
+    /* border: 1px solid #e14c46; */
+    /* border-left: 0;
+    border-top: 0; */
+}
+
+.cl-table-modular .public-table-style .el-input--mini .el-input__inner {
+    height: 32px;
+}
+
+.cl-table-modular .public-table-style>table th:last-child,
+.cl-table-modular .public-table-style>table td:last-child {
+    text-align: center;
+}
+
+.cl-table-modular .public-table-style>table th:first-child,
+.cl-table-modular .public-table-style>table td:first-child {
+    text-align: center;
+}
+
+.cl-table-modular .public-table-style>table td:last-child p {
+    opacity: 1;
+}
+
+.cl-table-modular .public-table-style>table tr:hover td:last-child p {
+    opacity: 1;
+}
+
+.cl-table-modular .public-table-style>table td:last-child p img {
+    cursor: pointer;
+}
+
+
+/**************** 表单页面,比如购销合同详情页面 ****************/
+
+.cl-form-modular {
+    width: 100%;
+    padding: 4px 0px;
+    margin-bottom: 4px;
+    background: #fff;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cl-form-modular>.form-head {
+    width: 100%;
+    /* background: #f0f0f0; */
+}
+
+.cl-form-modular>.form-content {
+    /* height: 0px; */
+}
+
+.cl-form-modular .form-ul {
+    width: 100%;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cl-form-modular .form-ul>li {
+    width: 24%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+}
+
+.cl-form-modular .form-ul>li.special {
+    width: 50%;
+}
+
+.cl-form-modular .form-ul li>span:first-of-type {
+    float: left;
+    width: 90px;
+    color: rgb(136, 136, 136);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.cl-form-modular .form-ul input {
+    border-radius: 2px;
+    border: 1px solid #cdd0d1;
+    box-sizing: border-box;
+    width: 150px;
+    height: 28px;
+    text-indent: 6px;
+}
+
+.cl-form-modular .form-ul textarea {
+    border-radius: 2px;
+    border: 1px solid #cdd0d1;
+    box-sizing: border-box;
+    width: 80.9%;
+    height: 28px;
+    text-indent: 6px;
+}
+
+.cl-form-modular .form-ul .el-input,
+.cl-form-modular .form-ul .el-select {
+    width: 150px;
+}
+
+.cl-form-modular .form-ul .el-date-editor.el-input {
+    width: 150px;
+}
+
+.cl-form-modular .form-ul .el-input input,
+.cl-form-modular .form-ul .el-select input {
+    border: 1px solid #cdd0d1;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 28px !important;
+}
+
+.cl-form-modular .form-ul .el-checkbox__input.is-checked .el-checkbox__inner {
+    border: 1px solid #e14c46;
+}
+
+.cl-form-modular .form-ul .el-checkbox__input.is-checked .el-checkbox__inner::after {
+    border: 1px solid #e14c46;
+    border-left: 0;
+    border-top: 0;
+}

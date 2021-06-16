@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+main::-webkit-scrollbar,
+section::-webkit-scrollbar,
+table::-webkit-scrollbar,
+tbody::-webkit-scrollbar,
+aside::-webkit-scrollbar,
+ul::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb,
+table::-webkit-scrollbar-thumb,
+tbody::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #b0b0b0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+    color: #BFC4CC;
+}
+
+input::-moz-placeholder {
+    color: #BFC4CC;
+}
+
+input:-moz-placeholder {
+    color: #BFC4CC;
+}
+
+input:-ms-input-placeholder {
+    color: #BFC4CC;
+}
