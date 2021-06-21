@@ -27,6 +27,11 @@
             <span>企业经营地址</span>
             <input type="text" v-model="applyData.company_address" />
           </li>
+
+          <li>
+            <span>预估营业额</span>
+            <input type="text" v-model="applyData.estimate_turnover" />
+          </li>
         </ul>
 
         <div class="btn-box">
@@ -49,6 +54,7 @@ interface ApplyData {
   auth_id: string
   cell_phone: string
   company_address: string
+  estimate_turnover: string
 }
 
 interface State {
@@ -66,6 +72,7 @@ export default {
         auth_id: "",
         cell_phone: "",
         company_address: "",
+        estimate_turnover: "",
       },
     })
 

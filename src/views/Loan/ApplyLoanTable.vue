@@ -10,6 +10,7 @@
               <col />
               <col />
               <col />
+              <col />
               <tr>
                 <th>
                   <span>姓名</span>
@@ -26,10 +27,14 @@
                 <th>
                   <span>企业经营地址</span>
                 </th>
+                <th>
+                  <span>预估营业额</span>
+                </th>
               </tr>
             </thead>
             <tbody>
               <table>
+                <col />
                 <col />
                 <col />
                 <col />
@@ -56,6 +61,10 @@
 
                   <td style="text-align:left">
                     <span>{{item.company_address}}</span>
+                  </td>
+
+                  <td style="text-align:left">
+                    <span>{{item.estimate_turnover}}</span>
                   </td>
                 </tr>
               </table>
@@ -144,12 +153,12 @@ export default {
         method: "post",
         url: "/view_shop",
         data: {
-          shop_id:1,
+          shop_id: 1,
           id_only: true
         },
       }).then((res: any) => {
         console.log(res)
-       
+
       }).catch((err: any) => {
         console.log(err)
         ElMessage.error('数据返回错误.')

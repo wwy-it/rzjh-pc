@@ -9,7 +9,7 @@ import "@/assets/style/style.css"
 import "@/assets/style/el.css"
 import '@/assets/style/cl-public.css' //基本样式
 
-axios.defaults.baseURL = "http://8.140.50.228:5000/"
+axios.defaults.baseURL = "https://aiq.group:5000/"
 
 // 请求拦截
 axios.interceptors.request.use(config => {
