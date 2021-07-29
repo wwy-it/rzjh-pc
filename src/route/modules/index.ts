@@ -22,6 +22,18 @@ const routes = [
                 meta: { title: "主页" }
             },
             {
+                path: '/loan-before-info',
+                name: 'loan-before-info',
+                component: () => import('@/views/Loan/LoanBeforeInfo.vue'),
+                meta: { title: "贷前信息" }
+            },
+            {
+                path: '/loan-before-table',
+                name: 'loan-before-table',
+                component: () => import('@/views/Loan/LoanBeforeTable.vue'),
+                meta: { title: "贷前列表" }
+            },
+            {
                 path: '/apply-loan-form',
                 name: 'apply-loan-form',
                 component: () => import('@/views/Loan/ApplyLoanForm.vue'),
@@ -57,15 +69,20 @@ const routes = [
                 component: () => import('@/views/Report/Orders.vue'),
                 meta: { title: "订单" }
             },
-
-
-
+            {
+                path: '/test',
+                name: 'test',
+                component: Test,
+                meta: { title: "代码测试" },
+            },
             {
                 path: '/build-link',
                 name: 'build-link',
                 component: BuildLink,
                 meta: { title: "建立连接" }
             },
+
+
             {
                 path: '/cost-analysis',
                 name: 'cost-analysis',
@@ -73,72 +90,10 @@ const routes = [
                 meta: { title: "成本分析" }
             },
             {
-                path: '/cost-category',
-                name: 'cost-category',
-                component: () => import('@/views/Work/CostCategory.vue'),
-                meta: { title: "成本类别" }
-            },
-            {
                 path: '/rate',
                 name: 'rate',
                 component: () => import('@/views/Work/Rate.vue'),
                 meta: { title: "账户效率" }
-            },
-            {
-                path: '/accounts',
-                name: 'accounts',
-                component: () => import('@/views/Work/Accounts.vue'),
-                meta: { title: "账户排名" }
-            },
-            {
-                path: '/spend',
-                name: 'spend',
-                component: () => import('@/views/Work/Spend.vue'),
-                meta: { title: "支出分析" }
-            },
-            {
-                path: '/trend',
-                name: 'trend',
-                component: () => import('@/views/Work/Trend.vue'),
-                meta: { title: "Trend & Notification" }
-            },
-            {
-                path: '/optimization',
-                name: 'optimization',
-                component: () => import('@/views/Analyzer/Optimization.vue'),
-                meta: { title: "optimization" },
-                children: [
-                    {
-                        path: '/optimization/compute',
-                        name: 'compute',
-                        component: () => import('@/views/Analyzer/Compute.vue'),
-                        meta: { title: "计算概述" },
-                    },
-                    {
-                        path: '/optimization/containers',
-                        name: 'containers',
-                        component: () => import('@/views/Analyzer/Containers.vue'),
-                        meta: { title: "容器" },
-                    },
-                    {
-                        path: '/optimization/elastic',
-                        name: 'elastic',
-                        component: () => import('@/views/Analyzer/Elastic.vue'),
-                        meta: { title: "弹性应用" },
-                    },
-                    {
-                        path: '/optimization/reservation',
-                        name: 'reservation',
-                        component: () => import('@/views/Analyzer/Reservation.vue'),
-                        meta: { title: "预订" },
-                    },
-                ]
-            },
-            {
-                path: '/test',
-                name: 'test',
-                component: Test,
-                meta: { title: "代码测试" },
             },
         ]
     },

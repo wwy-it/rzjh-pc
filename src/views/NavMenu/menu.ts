@@ -13,11 +13,6 @@ const menu: Item[] = [
         title: "主页"
     },
     {
-        path: '/apply-loan-form',
-        name: 'apply-loan-form',
-        title: "客户申请"
-    },
-    {
         path: '/basic-information',
         name: 'basic-information',
         title: "申请环节"
@@ -26,6 +21,16 @@ const menu: Item[] = [
         path: '/apply-loan-table',
         name: 'apply-loan-table',
         title: "申请列表"
+    },
+    {
+        path: '/loan-before-info',
+        name: 'loan-before-info',
+        title: "贷前信息录入"
+    },
+    {
+        path: '/loan-before-table',
+        name: 'loan-before-table',
+        title: "贷前信息列表"
     },
     {
         path: '/$node',

@@ -290,9 +290,19 @@ button.cl-button:focus {
 }
 
 .cl-table-modular .public-table-style>table td .el-select,
-.cl-table-modular .public-table-style>table td .el-input {
+.cl-table-modular .public-table-style>table td .el-input,
+.cl-table-modular .public-table-style>table td input {
     width: 100%;
 }
+.cl-table-modular .public-table-style > table td input {
+    box-sizing: border-box;
+    height: 32px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #5ebfff;
+    text-indent: 0.5em;
+    color: #007ace;
+  }
 
 .cl-table-modular .public-table-style>table td>span {
     padding: 0px 4px 0px 4px;
@@ -308,22 +318,6 @@ button.cl-button:focus {
     text-indent: 4px;
 }
 
-
-/* checkbox */
-
-.cl-table-modular .public-table-style .el-checkbox__input.is-checked .el-checkbox__inner {
-    /* border: 1px solid #e14c46; */
-}
-
-.cl-table-modular .public-table-style .el-checkbox__input.is-checked .el-checkbox__inner::after {
-    /* border: 1px solid #e14c46; */
-    /* border-left: 0;
-    border-top: 0; */
-}
-
-.cl-table-modular .public-table-style .el-input--mini .el-input__inner {
-    height: 32px;
-}
 
 .cl-table-modular .public-table-style>table th:last-child,
 .cl-table-modular .public-table-style>table td:last-child {
@@ -345,6 +339,7 @@ button.cl-button:focus {
 
 .cl-table-modular .public-table-style>table td:last-child p img {
     cursor: pointer;
+    width: 20px;
 }
 
 
@@ -391,7 +386,8 @@ button.cl-button:focus {
 
 .cl-form-modular .form-ul li>span:first-of-type {
     float: left;
-    width: 90px;
+    /* width: 90px; */
+    width: 120px;
     color: rgb(136, 136, 136);
     white-space: nowrap;
     overflow: hidden;

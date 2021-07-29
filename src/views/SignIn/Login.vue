@@ -2,8 +2,8 @@
   <div class="page">
     <div class="logo"></div>
     <div class="login-form">
-      <input type="text" placeholder="账号" />
-      <input type="password" placeholder="密码" />
+      <input type="text" v-model="account" placeholder="账号" />
+      <input type="password" v-model="password" placeholder="密码" />
       <button class="cl-button" @click="toLogin">登录/注册</button>
     </div>
     <div class="login-sign">
@@ -15,20 +15,34 @@
 </template>
 
 <script  lang='ts'>
-import { onMounted } from "vue";
-import { useRouter, useRoute } from 'vue-router'
+import { onMounted, reactive, toRefs } from "vue";
+import { useRouter, useRoute, } from 'vue-router'
+import { ElMessage } from 'element-plus'
 
+interface State {
+  account: string
+  password: string
+}
 export default {
   name: "data_page",
   setup() {
+    const state: State = reactive({
+      account: '',
+      password: ''
+    })
+
     const router = useRouter()
     function toLogin() {
-      router.push({
-        name: 'home',
-      })
-
+      if (state.account === 'root' && state.password === 'root123') {
+        router.push({
+          name: 'home',
+        })
+      } else {
+        ElMessage.error('账户或者密码错误')
+      }
     }
     return {
+      ...toRefs(state),
       toLogin
     };
   },
